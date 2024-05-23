@@ -1,0 +1,139 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.blogPost{
+    background-image: url('https://preview.colorlib.com/theme/villa/img/round.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    min-height: 120vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 0;
+    .container{
+        width: 85%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 40px 0;
+        gap: 40px;
+        .blogPostText{
+            width: 67%;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            gap: 15px;
+            h2{
+                font-family: "Playfair+Display", times, serif;
+                font-size: 80px;
+                font-weight: 500;
+                line-height: 96px;
+                color: black;
+            }
+            p{
+                font-family: "Mukta Mahee", arial, sans-serif;
+                font-size: 20px;
+                font-weight: 300;
+                line-height: 36px;
+                color:rgb(108, 117, 125);
+            }
+        }
+        .blogPostCards{
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            .blogPostCard{
+                background-color: white;
+                box-shadow: (0px 0px 5px rgba(0, 0, 0, 0.24));
+                width: 32%;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                .cardImg{
+                    width: 100%;
+                    img{
+                        width: 100%;
+                    }
+                }
+                .cardText{
+                    width: 80%;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: flex-start;
+                    justify-content: center;
+                    gap: 5px;
+                    padding: 20px 0;
+                    span{
+                        color: rgb(206, 212, 218);
+                        font-size: 16px;
+                        font-weight: 200;
+                        font-family: "Mukta Mahee", arial, sans-serif;
+                    }
+                    h3{
+                        color: black;
+                        font-size: 26px;
+                        font-weight: 500;
+                        line-height: 31px;
+                        font-family: "Playfair+Display", times, serif;
+                        transition: 0.5s ease;
+                        &:hover{
+                            cursor: pointer;
+                            color: rgb(230, 28, 93);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 300px) and (max-width: 576px) {
+    .blogPost{
+        width: 100%;
+        .container{
+            width: 95%;
+            .blogPostText{
+                width: 90%;
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                align-items: center;
+                text-align: center;
+                gap: 15px;
+                h2{
+                    font-size: 40px;
+                    line-height: 48px;
+                }
+                p{
+                    font-size: 16px;
+                    line-height: 29px;
+                }
+            }
+            .blogPostCards{
+                width: 100%;
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                align-items: center;
+                gap: 20px;
+                .blogPostCard{
+                    width: 100%;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                }
+            }
+        }
+    }
+}

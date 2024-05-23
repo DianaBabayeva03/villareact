@@ -1,0 +1,131 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Mukta Mahee", arial, sans-serif;
+}
+
+.welcome{
+    position: relative;
+    background-image: url('https://preview.colorlib.com/theme/villa/img/hero_1.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .container{
+        width: 100%;
+        background-color: rgba(0, 0, 0, 0.422);
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .welcomeText{
+            width: 80%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+            h2{
+                font-family: "Playfair+Display", times, serif;
+                color: white;
+                font-weight: 700;
+                font-size: 80px;
+                line-height: 80px;
+                span{
+                    font-family: "Playfair+Display", times, serif;
+                    font-style: italic;
+                }
+            }
+            p{
+                color: white;
+                font-weight: 200;
+                font-size: 30px;
+                line-height: 45px;
+            }
+            .btns{
+                margin-top: 20px;
+                width: 35%;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                .btnbeauty{
+                    background-color: rgb(230, 28, 93);
+                    border: 1px solid rgb(230, 28, 93);
+                    border-radius: 100px;
+                    color: white;
+                    font-size: 14px;
+                    font-weight: 400;
+                    letter-spacing: 2px;
+                    padding: 10px 25px;
+                    transition: 0.5s ease;
+                    &:hover{
+                        cursor: pointer;
+                        background-color: rgb(230, 28, 93);
+                    }
+                }
+                .btndownload{
+                    background-color: transparent;
+                    border: 1px solid white;
+                    border-radius: 100px;
+                    color: white;
+                    font-size: 14px;
+                    font-weight: 400;
+                    letter-spacing: 2px;
+                    padding: 10px 25px;
+                    transition: 0.5s ease;
+                    &:hover{
+                        cursor: pointer;
+                        background-color: white;
+                        color: black;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 300px) and (max-width: 576px) {
+    .welcome{
+        width: 100%;
+        .container{
+            width: 100%;
+            .welcomeText{
+                width: 95%;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                text-align: center;
+                gap: 10px;
+                h2{
+                    font-size: 40px;
+                    line-height: 40px;
+                }
+                p{
+                    font-size: 18px;
+                    line-height: 27px;
+                }
+                .btns{
+                    margin-top: 20px;
+                    width: 90%;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    gap: 10px;
+                    .btnbeauty{
+                        width: 100%;
+                    }
+                    .btndownload{
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+}

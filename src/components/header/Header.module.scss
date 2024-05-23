@@ -1,0 +1,84 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Playfair+Display';
+}
+
+.headerBox{
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0;
+    .container{
+        width: 98%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .logo{
+            width: 8%;
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+    
+        h1{
+            font-family: "Playfair+Display", times, serif;
+                font-size: 30px;
+                font-weight: 700;
+                color: white;
+                font-style: italic;
+            }
+        }
+        .iconBox{
+            width: 15%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            span{
+                color: white;
+                font-size: 20px;
+                font-weight: 600;
+                transition: 0.5s ease;
+                &:hover{
+                    color: rgba(230, 28, 92, 0.616);
+                    cursor: pointer;
+                }
+            }
+        }
+        .navBar{
+            width: 5%;
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            .navBarIcon{
+                display: flex;
+                justify-content: flex-end;
+                align-items: center;
+                span{
+                    color:rgb(185, 185, 185);
+                    font-size: 30px;
+                    &:hover{
+                        cursor: pointer;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 300px) and (max-width: 576px) {
+    .headerBox{
+        width: 100%;
+        .container{
+            width: 98%;
+            display: flex;
+            align-items: flex-end;
+            .iconBox{
+                width: 35%;
+            }
+        }
+    }
+}

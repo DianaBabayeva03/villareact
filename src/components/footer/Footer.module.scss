@@ -1,0 +1,86 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Mukta Mahee", arial, sans-serif;
+}
+
+
+.footerBox{
+    width: 100%;
+    background-color: rgb(26, 26, 26);
+    padding: 40px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .container{
+        width: 85%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .footerBoxText{
+            width: 60%;
+            p{
+                color: rgba(255, 255, 255, 0.5);
+                font-size: 16px;
+                font-weight: 200;
+                span{
+                    transition: 0.5s ease;
+                }
+                &:hover span{
+                    cursor: pointer;
+                    color: white;
+                }
+            }
+        }
+        .icons{
+            width: 8%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            button{
+                font-size: 20px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                border: none;
+                background-color: transparent;
+                color: rgba(255, 255, 255, 0.5);
+                transition: 0.5s ease;
+                &:hover{
+                    cursor: pointer;
+                    color: rgb(255, 255, 255);
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 300px) and (max-width: 576px) {
+    .footerBox{
+        width: 100%;
+        background-color: rgb(26, 26, 26);
+        padding: 40px 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .container{
+            width: 95%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 15px;
+            .footerBoxText{
+                width: 100%;
+            }
+            .icons{
+                width: 80%;
+                display: flex;
+                justify-content: flex-end;
+                align-items: center;
+                gap: 5px;
+            }
+        }
+    }
+}
