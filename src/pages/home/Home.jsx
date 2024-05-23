@@ -38,7 +38,7 @@ const Home = () => {
   }
 
   const addToWish = (item) => {
-    axios.get('https://664b0dc2a300e8795d44055f.mockapi.io/basket')
+    axios.get('https://664b0dc2a300e8795d44055f.mockapi.io/wishlist')
     .then( res => {
       const db = res.data
       const existingFile = db.find(x => x.id == item.id)
